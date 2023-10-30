@@ -33,11 +33,11 @@ void func2() {
   int min = 1;
   int max = 100;
   int mid;
-  String? usersAnswer;
+  String usersAnswer;
   while (true) {
     mid = (min + max) ~/ 2;
     print("vashe chislo больше чем - $mid - или меньше?");
-    String usersAnswer = stdin.readLineSync()!;
+    usersAnswer = stdin.readLineSync()!;
     if (usersAnswer == "=") {
       break;
     } else if (usersAnswer == "+") {
